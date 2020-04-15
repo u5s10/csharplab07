@@ -53,7 +53,6 @@ namespace csharplab07
 
 
             Image imag;
-            int i = 1;
             string path = "";
             foreach (string fileName in files) {
                 imag = Bitmap.FromFile(fileName);
