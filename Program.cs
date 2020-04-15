@@ -40,7 +40,7 @@ namespace csharplab07
 
         public static void ProcessDirectory(string targetDirectory, string outputDir, int width, int height)
         {
-            var allowedExtensions = new[] { ".jpg", ".png", ".bmp" };
+            var allowedExtensions = new[] { ".jpg", ".png", ".bmp", "jpeg", ".tiff", ".img"};
             var files = Directory
                 .GetFiles(targetDirectory)
                 .Where(file => allowedExtensions.Any(file.ToLower().EndsWith))
